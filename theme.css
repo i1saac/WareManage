@@ -1,0 +1,52 @@
+/**
+ * NettoClean — ثيم موحّد (ألوان وأنماط أساسية)
+ * Layout يبقى LTR حتى تبقى مواضع البطاقات والأرقام كما هي.
+ */
+:root {
+    --primary: #1e3a5f;
+    --primary-dark: #0f2a45;
+    --primary-light: #3b82f6;
+    --secondary: #64748b;
+    --success: #10b981;
+    --success-dark: #059669;
+    --warning: #f59e0b;
+    --warning-dark: #d97706;
+    --danger: #ef4444;
+    --danger-dark: #dc2626;
+    --dark: #1e293b;
+    --gray: #64748b;
+    --light: #f0f9ff;
+    --border: #b8d4f0;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --radius: 0.5rem;
+    --radius-lg: 0.75rem;
+}
+
+html[lang="ar"] {
+    direction: ltr;
+}
+
+body.nc-app-body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, "Arabic UI Display", "Arabic UI Text", Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2a45 0%, #1e3a5f 50%, #3b82f6 100%);
+    min-height: 100vh;
+    color: var(--dark);
+}
+
+body.nc-auth-body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, "Arabic UI Display", "Arabic UI Text", Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2a45 0%, #1e3a5f 45%, #3b82f6 100%);
+    min-height: 100vh;
+}
+
+body.nc-public-body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, "Arabic UI Display", "Arabic UI Text", Arial, sans-serif;
+    background: linear-gradient(135deg, #f8fafc, #e0f2fe);
+    min-height: 100vh;
+    color: #1e2937;
+}
